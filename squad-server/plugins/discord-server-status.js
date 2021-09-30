@@ -7,7 +7,8 @@ import DiscordBaseMessageUpdater from './discord-base-message-updater.js';
 
 export default class DiscordServerStatus extends DiscordBaseMessageUpdater {
   static get description() {
-    return 'The <code>DiscordServerStatus</code> plugin can be used to get the server status in Discord.';
+    return 'The <code>DiscordServerStatus</code> plugin can be used to get the server status in Discord.' + 
+      'Be aware that you can let SquadJS auto update the status messages by using `!status subscribe`';
   }
 
   static get defaultEnabled() {
